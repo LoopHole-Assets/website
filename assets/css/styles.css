@@ -9,7 +9,7 @@
 }
 
 :root {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: "Poppins", sans-serif;
     --primary-blue: #3B82F6;
     --light-blue: #E0F2FE;
     --sky-blue: #0EA5E9;
@@ -520,6 +520,17 @@ textarea {
         display: flex;
     }
 
+    .theme-toggle-btn {
+        position: static;
+        transform: none;
+    }
+
+    .mobile-nav-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
     nav.desktop-nav {
         display: none;
     }
@@ -822,6 +833,13 @@ textarea {
 .feature-card p {
     color: var(--light-text);
     font-size: 0.95rem;
+}
+
+.service-card-icon,
+.feature-icon,
+.avatar-placeholder,
+.service-icon {
+    color: var(--dark-text);
 }
 
 /* ====================================
