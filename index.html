@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
+
+
 </head>
 <body class="light-mode">
 
@@ -132,13 +134,36 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; <span data-year"></span> LoopHole InfoTech. Built by the team.</p>
+    <!-- Inline Footer: simplified (no logo, no nav) -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.tiktok.com/@loophole.infotech" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/loophole.infotech" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/loophole.infotech/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
         </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <small>&copy; <span id="footer-year"></span> LoopHole InfoTech. All rights reserved.</small>
+        </div>
+      </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+    <script>
+      (function(){
+        var el = document.getElementById('footer-year');
+        if(el) el.textContent = new Date().getFullYear();
+      })();
+    </script>
+ 
+     <script src="assets/js/main.js"></script>
+ </body>
+ </html>
