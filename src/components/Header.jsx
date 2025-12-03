@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import logoImg from '../assets/img/logo.png'
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -19,7 +20,7 @@ export default function Header() {
     >
       <div className="container">
         <Link to="/" className="logo" onClick={closeMobile}>
-          <img src="/assets/img/logo.png" alt="LoopHole Infotech" />
+          <img src={logoImg} alt="LoopHole Infotech" />
           <span>LoopHole</span>
         </Link>
 

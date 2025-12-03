@@ -1,5 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import pranishImg from '../assets/img/pranish.jpg'
+import laxmanImg from '../assets/img/laxman.png'
+import safalImg from '../assets/img/safal.jpg'
+import kushalImg from '../assets/img/kushal.jpg'
+import sabinImg from '../assets/img/sabin.png'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -12,11 +17,11 @@ const stagger = {
 }
 
 const team = [
-  { name: 'Pranish Pudasaini', role: 'Team Lead', img: '/assets/img/pranish.jpg' },
-  { name: 'Laxman Mangrati', role: 'Management Lead', img: '/assets/img/laxman.png' },
-  { name: 'Safal Gautam', role: 'Full Stack Developer', img: '/assets/img/safal.jpg' },
-  { name: 'Kushal Khadka', role: 'Accounts & Finance Lead', img: '/assets/img/kushal.jpg' },
-  { name: 'Laxmi Prasad Rimal', role: 'Full Stack Developer', img: '/assets/img/sabin.png' },
+  { name: 'Pranish Pudasaini', role: 'Team Lead', img: pranishImg },
+  { name: 'Laxman Mangrati', role: 'Management Lead', img: laxmanImg },
+  { name: 'Safal Gautam', role: 'Full Stack Developer', img: safalImg },
+  { name: 'Kushal Khadka', role: 'Accounts & Finance Lead', img: kushalImg },
+  { name: 'Laxmi Prasad Rimal', role: 'Full Stack Developer', img: sabinImg },
   { name: 'Aalok Nepal', role: 'Managing Lead', img: null }
 ]
 

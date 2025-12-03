@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import logoImg from '../assets/img/logo.png'
 
 export default function SplashScreen({ onComplete }) {
   return (
@@ -17,7 +18,7 @@ export default function SplashScreen({ onComplete }) {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <motion.img 
-          src="/assets/img/logo.png" 
+          src={logoImg} 
           alt="LoopHole"
           initial={{ y: 20 }}
           animate={{ y: 0 }}
